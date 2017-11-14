@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_speed"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.asus.unitconverter.Speed">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:background="?attr/colorPrimary"
+        android:theme="?attr/actionBarTheme"
+        android:minHeight="?attr/actionBarSize"
+        android:id="@+id/toolbar4"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_height="120dp" />
+
+    <TextView
+        android:text="m/s"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="44dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/speedText1"
+        android:textSize="24sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="Meter/sec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/speedText2"
+        android:layout_below="@+id/speedText1"
+        android:layout_alignLeft="@+id/speedText1"
+        android:layout_alignStart="@+id/speedText1" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:layout_alignBottom="@+id/speedText2"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="21dp"
+        android:layout_marginEnd="21dp"
+        android:id="@+id/speed_input"
+        android:hint="Input"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:text="Meter/hr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar4"
+        android:layout_alignLeft="@+id/speedText2"
+        android:layout_alignStart="@+id/speedText2"
+        android:layout_marginTop="44dp"
+        android:id="@+id/speedText3"
+        android:textSize="20sp"
+        android:textColor="@android:color/background_dark" />
+
+    <TextView
+        android:text="0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/speedText3"
+        android:layout_alignLeft="@+id/speed_input"
+        android:layout_alignStart="@+id/speed_input"
+        android:layout_marginLeft="51dp"
+        android:layout_marginStart="51dp"
+        android:id="@+id/speedText4"
+        android:textSize="20sp"
+        android:textColor="@android:color/background_dark" />
+
+    <TextView
+        android:text="Kilometer/hr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/speedText3"
+        android:layout_alignLeft="@+id/speedText3"
+        android:layout_alignStart="@+id/speedText3"
+        android:layout_marginTop="34dp"
+        android:id="@+id/speedText5"
+        android:textSize="20sp"
+        android:textColor="@android:color/background_dark" />
+
+    <TextView
+        android:text="0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/speedText5"
+        android:layout_alignLeft="@+id/speedText4"
+        android:layout_alignStart="@+id/speedText4"
+        android:id="@+id/speedText6"
+        android:textSize="20sp"
+        android:textColor="@android:color/background_dark" />
+
+    <Button
+        android:text="Convert"
+        android:layout_width="120dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/speed_input"
+        android:layout_alignRight="@+id/speed_input"
+        android:layout_alignEnd="@+id/speed_input"
+        android:id="@+id/btn_speed"
+        android:background="@color/colorPrimaryDark" />
+
+</RelativeLayout>

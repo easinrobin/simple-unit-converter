@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="0dp"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.asus.unitconverter.MainActivity">
+
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:background="@color/colorAccent"
+        android:theme="?attr/actionBarTheme"
+        android:minHeight="?attr/actionBarSize"
+        android:id="@+id/toolbar" />
+
+    <TextView
+        android:text="Choose a Conversion Type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView3"
+        android:textSize="24sp"
+        android:textAlignment="center"
+        android:layout_marginLeft="13dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/races1"
+        android:id="@+id/speed_img"
+        android:layout_alignTop="@+id/force_img"
+        android:layout_alignLeft="@+id/length_img"
+        android:layout_alignStart="@+id/length_img"
+        android:clickable="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/gauge1"
+        android:layout_marginTop="18dp"
+        android:id="@+id/force_img"
+        android:layout_below="@+id/tmp_img"
+        android:layout_alignLeft="@+id/tmp_img"
+        android:layout_alignStart="@+id/tmp_img"
+        android:clickable="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/thermometer1"
+        android:id="@+id/tmp_img"
+        android:clickable="true"
+        android:layout_marginTop="17dp"
+        android:layout_below="@+id/toolbar"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_alignStart="@+id/textView3" />
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="120dp"
+        app:srcCompat="@drawable/compass1"
+        android:id="@+id/length_img"
+        android:layout_marginLeft="28dp"
+        android:layout_marginStart="28dp"
+        android:layout_alignTop="@+id/tmp_img"
+        android:layout_toRightOf="@+id/tmp_img"
+        android:layout_toEndOf="@+id/tmp_img"
+        android:clickable="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/kg1"
+        android:layout_marginRight="41dp"
+        android:layout_marginEnd="41dp"
+        android:layout_marginTop="12dp"
+        android:layout_below="@+id/speed_img"
+        android:layout_alignRight="@+id/textView3"
+        android:layout_alignEnd="@+id/textView3"
+        android:id="@+id/weight_img"
+        android:clickable="true" />
+
+
+
+
+</RelativeLayout>

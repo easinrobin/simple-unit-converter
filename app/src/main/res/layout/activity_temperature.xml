@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_temperature"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.asus.unitconverter.Temperature">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:background="?attr/colorPrimary"
+        android:theme="?attr/actionBarTheme"
+        android:minHeight="?attr/actionBarSize"
+        android:id="@+id/toolbar2"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_height="120dp" />
+
+    <TextView
+        android:text="°C"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="55dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="22dp"
+        android:id="@+id/tempText1"
+        android:textSize="24sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="Temperature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="37dp"
+        android:layout_marginStart="37dp"
+        android:id="@+id/tempText2"
+        android:layout_below="@+id/tempText1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number|numberSigned|numberDecimal"
+        android:ems="10"
+        android:layout_alignBottom="@+id/tempText2"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginEnd="20dp"
+        android:id="@+id/tmp_input"
+        android:hint="Input"
+        android:textColor="?attr/colorBackgroundFloating" />
+
+    <TextView
+        android:text="Fahrenheit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar2"
+        android:layout_alignLeft="@+id/tempText2"
+        android:layout_alignStart="@+id/tempText2"
+        android:layout_marginTop="31dp"
+        android:id="@+id/tempText3"
+        android:textSize="20sp"
+        android:textColor="@android:color/background_dark" />
+
+    <TextView
+        android:text="0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tempText3"
+        android:layout_alignLeft="@+id/tmp_input"
+        android:layout_alignStart="@+id/tmp_input"
+        android:layout_marginLeft="69dp"
+        android:layout_marginStart="69dp"
+        android:id="@+id/tempText4"
+        android:textSize="20sp"
+        android:textColor="@android:color/background_dark" />
+
+    <TextView
+        android:text="Kelvin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tempText3"
+        android:layout_alignLeft="@+id/tempText3"
+        android:layout_alignStart="@+id/tempText3"
+        android:layout_marginTop="30dp"
+        android:id="@+id/textView5"
+        android:textSize="20sp"
+        android:textColor="@android:color/background_dark" />
+
+    <TextView
+        android:text="0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView5"
+        android:layout_alignLeft="@+id/tempText4"
+        android:layout_alignStart="@+id/tempText4"
+        android:id="@+id/tempText6"
+        android:textSize="20sp"
+        android:textColor="@android:color/background_dark" />
+
+    <Button
+        android:text="Convert"
+        android:id="@+id/btn_temp"
+        android:textSize="12sp"
+        android:layout_width="100dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/tmp_input"
+        android:layout_alignRight="@+id/tmp_input"
+        android:layout_alignEnd="@+id/tmp_input"
+        android:onClick="btnConvert"
+        android:background="@color/colorPrimaryDark" />
+
+
+</RelativeLayout>

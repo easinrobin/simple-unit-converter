@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_force"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.asus.unitconverter.Force">
+
+    <TextView
+        android:text="0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView12"
+        android:textSize="20sp"
+        android:textColor="@android:color/background_dark"
+        android:layout_alignBaseline="@+id/forceText5"
+        android:layout_alignBottom="@+id/forceText5"
+        android:layout_alignLeft="@+id/textView9"
+        android:layout_alignStart="@+id/textView9" />
+
+    <TextView
+        android:text="0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/forceText3"
+        android:layout_alignLeft="@+id/force_input"
+        android:layout_alignStart="@+id/force_input"
+        android:layout_marginLeft="58dp"
+        android:layout_marginStart="58dp"
+        android:id="@+id/textView9"
+        android:textSize="20sp"
+        android:textColor="@android:color/background_dark" />
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:background="?attr/colorPrimary"
+        android:theme="?attr/actionBarTheme"
+        android:minHeight="?attr/actionBarSize"
+        android:id="@+id/toolbar3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_height="120dp" />
+
+    <TextView
+        android:text="Newton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="42dp"
+        android:layout_marginStart="42dp"
+        android:id="@+id/forceText2"
+        android:layout_below="@+id/forceText1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:layout_alignBottom="@+id/forceText2"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="22dp"
+        android:layout_marginEnd="22dp"
+        android:id="@+id/force_input"
+        android:hint="Input"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:text="N"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="14dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="15dp"
+        android:id="@+id/forceText1"
+        android:textSize="24sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/forceText2"
+        android:layout_alignStart="@+id/forceText2" />
+
+    <TextView
+        android:text="Joule/meter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="34dp"
+        android:id="@+id/forceText5"
+        android:textSize="20sp"
+        android:textColor="@android:color/background_dark"
+        android:layout_below="@+id/forceText3"
+        android:layout_alignLeft="@+id/forceText3"
+        android:layout_alignStart="@+id/forceText3" />
+
+    <TextView
+        android:text="Joule/cm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/forceText5"
+        android:layout_alignLeft="@+id/forceText5"
+        android:layout_alignStart="@+id/forceText5"
+        android:layout_marginTop="34dp"
+        android:id="@+id/forceText7"
+        android:textSize="20sp"
+        android:textColor="@android:color/background_dark" />
+
+    <TextView
+        android:text="0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/forceText8"
+        android:textSize="20sp"
+        android:textColor="@android:color/background_dark"
+        android:layout_alignBaseline="@+id/forceText7"
+        android:layout_alignBottom="@+id/forceText7"
+        android:layout_alignLeft="@+id/textView12"
+        android:layout_alignStart="@+id/textView12" />
+
+    <TextView
+        android:text="Exanewton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="53dp"
+        android:id="@+id/forceText3"
+        android:textSize="20sp"
+        android:textColor="@android:color/background_dark"
+        android:layout_below="@+id/btn_force"
+        android:layout_alignLeft="@+id/forceText2"
+        android:layout_alignStart="@+id/forceText2" />
+
+    <Button
+        android:text="Convert"
+        android:layout_width="100dp"
+        android:layout_height="35dp"
+        android:id="@+id/btn_force"
+        android:background="@color/colorPrimaryDark"
+        android:layout_marginBottom="22dp"
+        android:layout_alignBottom="@+id/toolbar3"
+        android:layout_alignRight="@+id/force_input"
+        android:layout_alignEnd="@+id/force_input" />
+
+</RelativeLayout>

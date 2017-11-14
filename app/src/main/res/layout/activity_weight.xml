@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_weight"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.asus.unitconverter.Weight">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:background="?attr/colorPrimary"
+        android:theme="?attr/actionBarTheme"
+        android:minHeight="?attr/actionBarSize"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/toolbar5"
+        android:layout_height="120dp" />
+
+    <TextView
+        android:text="Kilogram"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="37dp"
+        android:layout_marginStart="37dp"
+        android:id="@+id/weightText2"
+        android:layout_below="@+id/weightText1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:layout_alignBottom="@+id/weightText2"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="25dp"
+        android:layout_marginEnd="25dp"
+        android:id="@+id/weight_input"
+        android:hint="Input"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:text="Kg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="19dp"
+        android:id="@+id/weightText1"
+        android:textSize="24sp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginStart="13dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/weightText2"
+        android:layout_alignStart="@+id/weightText2" />
+
+    <TextView
+        android:text="Gram"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar5"
+        android:layout_alignLeft="@+id/weightText2"
+        android:layout_alignStart="@+id/weightText2"
+        android:layout_marginTop="38dp"
+        android:id="@+id/weightText3"
+        android:textSize="20sp"
+        android:textColor="@android:color/background_dark" />
+
+    <TextView
+        android:text="0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/weightText3"
+        android:layout_alignLeft="@+id/weight_input"
+        android:layout_alignStart="@+id/weight_input"
+        android:layout_marginLeft="54dp"
+        android:layout_marginStart="54dp"
+        android:id="@+id/weightText4"
+        android:textSize="20sp"
+        android:textColor="@android:color/background_dark" />
+
+    <TextView
+        android:text="Pound"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/weightText3"
+        android:layout_alignLeft="@+id/weightText3"
+        android:layout_alignStart="@+id/weightText3"
+        android:layout_marginTop="34dp"
+        android:id="@+id/weightText5"
+        android:textSize="20sp"
+        android:textColor="@android:color/background_dark" />
+
+    <TextView
+        android:text="0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/weightText5"
+        android:layout_alignLeft="@+id/weightText4"
+        android:layout_alignStart="@+id/weightText4"
+        android:id="@+id/weightText6"
+        android:textSize="20sp"
+        android:textColor="@android:color/background_dark" />
+
+    <Button
+        android:text="Convert"
+        android:layout_width="120dp"
+        android:id="@+id/btn_weight"
+        android:background="@color/colorPrimaryDark"
+        android:layout_marginRight="14dp"
+        android:layout_marginEnd="14dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/weight_input"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+</RelativeLayout>
